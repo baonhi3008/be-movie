@@ -10,7 +10,9 @@ terraform {
   }
 }
 provider "aws" {
-  region = var.region
+  region     = var.region
+  access_key = "ASIA3RE2SE7FTPTLLQXC"
+  secret_key = "VfQRFu85MIVQtc7hDmJsIKj07HavfUi2Z/VhHulD"
 }
 resource "aws_instance" "servernode" {
   ami                    = "ami-08f0bc76ca5236b20"
